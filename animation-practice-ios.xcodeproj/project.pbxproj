@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		7F79324424DE5C2C00A7EC4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79324324DE5C2C00A7EC4B /* AppDelegate.swift */; };
 		7F79324624DE5C2C00A7EC4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79324524DE5C2C00A7EC4B /* SceneDelegate.swift */; };
-		7F79324824DE5C2C00A7EC4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79324724DE5C2C00A7EC4B /* ViewController.swift */; };
 		7F79324B24DE5C2C00A7EC4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F79324924DE5C2C00A7EC4B /* Main.storyboard */; };
 		7F79324D24DE5C2E00A7EC4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F79324C24DE5C2E00A7EC4B /* Assets.xcassets */; };
 		7F79325024DE5C2E00A7EC4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F79324E24DE5C2E00A7EC4B /* LaunchScreen.storyboard */; };
+		7F79325824DE61C000A7EC4B /* ViewAnimationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */; };
+		7F79325A24DE620100A7EC4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325924DE620100A7EC4B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F79324024DE5C2C00A7EC4B /* animation-practice-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animation-practice-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F79324324DE5C2C00A7EC4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F79324524DE5C2C00A7EC4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F79324724DE5C2C00A7EC4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F79324A24DE5C2C00A7EC4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F79324C24DE5C2E00A7EC4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F79324F24DE5C2E00A7EC4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F79325124DE5C2E00A7EC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationControllerViewController.swift; sourceTree = "<group>"; };
+		7F79325924DE620100A7EC4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				7F79324324DE5C2C00A7EC4B /* AppDelegate.swift */,
 				7F79324524DE5C2C00A7EC4B /* SceneDelegate.swift */,
-				7F79324724DE5C2C00A7EC4B /* ViewController.swift */,
+				7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */,
+				7F79325924DE620100A7EC4B /* HomeViewController.swift */,
 				7F79324924DE5C2C00A7EC4B /* Main.storyboard */,
 				7F79324C24DE5C2E00A7EC4B /* Assets.xcassets */,
 				7F79324E24DE5C2E00A7EC4B /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F79324824DE5C2C00A7EC4B /* ViewController.swift in Sources */,
+				7F79325824DE61C000A7EC4B /* ViewAnimationControllerViewController.swift in Sources */,
 				7F79324424DE5C2C00A7EC4B /* AppDelegate.swift in Sources */,
 				7F79324624DE5C2C00A7EC4B /* SceneDelegate.swift in Sources */,
+				7F79325A24DE620100A7EC4B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

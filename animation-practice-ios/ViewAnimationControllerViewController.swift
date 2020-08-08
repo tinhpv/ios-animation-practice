@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewAnimationControllerViewController.swift
 //  animation-practice-ios
 //
 //  Created by TinhPV on 8/8/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewAnimationControllerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-
