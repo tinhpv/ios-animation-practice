@@ -19,6 +19,8 @@ class ViewAnimationControllerViewController: UIViewController {
     @IBOutlet weak var headingView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var proceedButton: UIButton!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     let spinner = UIActivityIndicatorView(style: .large)
     
@@ -87,6 +89,11 @@ class ViewAnimationControllerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
+        
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+        
         polishUI()
     }
     
@@ -94,6 +101,11 @@ class ViewAnimationControllerViewController: UIViewController {
         usernameView.layer.cornerRadius = 10.0
         passwordView.layer.cornerRadius = 10.0
         proceedButton.layer.cornerRadius = 10.0
+        
+        usernameView.layer.borderWidth = 0.0
+        passwordView.layer.borderWidth = 0.0
+        usernameView.layer.borderColor = #colorLiteral(red: 0.2666666667, green: 0.8431372549, blue: 0.7137254902, alpha: 1)
+        passwordView.layer.borderColor = #colorLiteral(red: 0.2666666667, green: 0.8431372549, blue: 0.7137254902, alpha: 1)
         
         spinner.frame = CGRect(x: -20.0, y: 6.0, width: 20.0, height: 20.0)
         spinner.startAnimating()
@@ -117,4 +129,26 @@ class ViewAnimationControllerViewController: UIViewController {
         }
     }
 
+}
+
+
+extension ViewAnimationControllerViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let tag = textField.tag
+        
+        let animateBorder = CABasicAnimation(keyPath: "borderWidth")
+        animateBorder.fromValue = 0.0
+        animateBorder.toValue = 1.0
+        animateBorder.fillMode = CAMediaTimingFillMode.both
+        animateBorder.isRemovedOnCompletion = false
+        animateBorder.duration = 0.8
+        
+        if tag == 0 {
+            usernameView.layer.add(animateBorder, forKey: nil)
+            passwordView.layer.removeAllAnimations()
+        } else {
+            passwordView.layer.add(animateBorder, forKey: nil)
+            usernameView.layer.removeAllAnimations()
+        }
+    }
 }

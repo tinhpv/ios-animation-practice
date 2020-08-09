@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="63l-M2-sKh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nyc-Xf-XpI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,7 +40,7 @@
         <!--View Animation Controller View Controller-->
         <scene sceneID="dRg-Au-z7l">
             <objects>
-                <viewController storyboardIdentifier="viewAnimationVC" id="63l-M2-sKh" customClass="ViewAnimationControllerViewController" customModule="animation_practice_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewAnimationVC" modalPresentationStyle="overCurrentContext" id="63l-M2-sKh" customClass="ViewAnimationControllerViewController" customModule="animation_practice_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G2p-EB-fTB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
                                 <rect key="frame" x="26" y="449" width="361" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgs-Kj-Jvs">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgs-Kj-Jvs">
                                         <rect key="frame" x="12" y="29" width="336" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,8 +160,10 @@
                     <connections>
                         <outlet property="headingView" destination="fIx-6h-8Zp" id="ywG-4h-CFb"/>
                         <outlet property="logoImageView" destination="bRG-yb-6Pe" id="guM-T5-cfL"/>
+                        <outlet property="passwordTextField" destination="hgs-Kj-Jvs" id="8Cm-dv-VHW"/>
                         <outlet property="passwordView" destination="aSW-Do-IcF" id="I9A-Kt-8mb"/>
                         <outlet property="proceedButton" destination="S7G-Xp-e2h" id="hZI-EH-pmg"/>
+                        <outlet property="usernameTextField" destination="6yC-cs-cCl" id="JGu-1T-U7q"/>
                         <outlet property="usernameView" destination="qnc-pX-zOr" id="BtF-Hn-50X"/>
                     </connections>
                 </viewController>
@@ -313,10 +315,63 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="Jtb-dN-J5w">
+            <objects>
+                <viewController id="nyc-Xf-XpI" customClass="LaunchScreenViewController" customModule="animation_practice_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ktU-sg-ZOh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ez4-oG-KvX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SkB-BU-S7f" userLabel="center">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cu1-x5-wbb">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="text_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NNw-I5-weK" userLabel="text">
+                                        <rect key="frame" x="50" y="50" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Uba-TJ-lrR">
+                                        <rect key="frame" x="52" y="41" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ez4-oG-KvX" firstAttribute="leading" secondItem="ktU-sg-ZOh" secondAttribute="leading" id="6ay-AE-BNv"/>
+                            <constraint firstAttribute="bottom" secondItem="ez4-oG-KvX" secondAttribute="bottom" id="NEA-mo-9mg"/>
+                            <constraint firstAttribute="trailing" secondItem="ez4-oG-KvX" secondAttribute="trailing" id="Rad-nL-AHK"/>
+                            <constraint firstItem="ez4-oG-KvX" firstAttribute="top" secondItem="ktU-sg-ZOh" secondAttribute="top" id="s5A-vG-Igj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VBx-rG-tAO"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundLogo" destination="cu1-x5-wbb" id="bLR-4s-7rD"/>
+                        <outlet property="redDot" destination="Uba-TJ-lrR" id="npJ-1Q-d70"/>
+                        <outlet property="textCenter" destination="NNw-I5-weK" id="Cwk-hK-Dtt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oje-oQ-Ieh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="-915"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="414" height="896"/>
+        <image name="background_logo" width="146" height="142"/>
         <image name="dark_logo" width="63" height="63"/>
         <image name="plane" width="73" height="50"/>
+        <image name="red_circle" width="15" height="14"/>
+        <image name="text_logo" width="39" height="75"/>
     </resources>
 </document>

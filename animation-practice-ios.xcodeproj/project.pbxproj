@@ -16,6 +16,7 @@
 		7F79325A24DE620100A7EC4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325924DE620100A7EC4B /* HomeViewController.swift */; };
 		7F79325C24E01EBA00A7EC4B /* PlaneScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */; };
 		7F79325E24E0233200A7EC4B /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325D24E0233200A7EC4B /* FlightData.swift */; };
+		7F79326024E067BB00A7EC4B /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325F24E067BB00A7EC4B /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7F79325924DE620100A7EC4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneScheduleViewController.swift; sourceTree = "<group>"; };
 		7F79325D24E0233200A7EC4B /* FlightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightData.swift; sourceTree = "<group>"; };
+		7F79325F24E067BB00A7EC4B /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				7F79324524DE5C2C00A7EC4B /* SceneDelegate.swift */,
 				7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */,
 				7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */,
+				7F79325F24E067BB00A7EC4B /* LaunchScreenViewController.swift */,
 				7F79325924DE620100A7EC4B /* HomeViewController.swift */,
 				7F79325D24E0233200A7EC4B /* FlightData.swift */,
 				7F79324924DE5C2C00A7EC4B /* Main.storyboard */,
@@ -153,6 +156,7 @@
 				7F79324624DE5C2C00A7EC4B /* SceneDelegate.swift in Sources */,
 				7F79325C24E01EBA00A7EC4B /* PlaneScheduleViewController.swift in Sources */,
 				7F79325A24DE620100A7EC4B /* HomeViewController.swift in Sources */,
+				7F79326024E067BB00A7EC4B /* LaunchScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
