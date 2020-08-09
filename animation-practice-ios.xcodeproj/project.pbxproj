@@ -14,6 +14,8 @@
 		7F79325024DE5C2E00A7EC4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F79324E24DE5C2E00A7EC4B /* LaunchScreen.storyboard */; };
 		7F79325824DE61C000A7EC4B /* ViewAnimationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */; };
 		7F79325A24DE620100A7EC4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325924DE620100A7EC4B /* HomeViewController.swift */; };
+		7F79325C24E01EBA00A7EC4B /* PlaneScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */; };
+		7F79325E24E0233200A7EC4B /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79325D24E0233200A7EC4B /* FlightData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7F79325124DE5C2E00A7EC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationControllerViewController.swift; sourceTree = "<group>"; };
 		7F79325924DE620100A7EC4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneScheduleViewController.swift; sourceTree = "<group>"; };
+		7F79325D24E0233200A7EC4B /* FlightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				7F79324324DE5C2C00A7EC4B /* AppDelegate.swift */,
 				7F79324524DE5C2C00A7EC4B /* SceneDelegate.swift */,
 				7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */,
+				7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */,
 				7F79325924DE620100A7EC4B /* HomeViewController.swift */,
+				7F79325D24E0233200A7EC4B /* FlightData.swift */,
 				7F79324924DE5C2C00A7EC4B /* Main.storyboard */,
 				7F79324C24DE5C2E00A7EC4B /* Assets.xcassets */,
 				7F79324E24DE5C2E00A7EC4B /* LaunchScreen.storyboard */,
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F79325824DE61C000A7EC4B /* ViewAnimationControllerViewController.swift in Sources */,
+				7F79325E24E0233200A7EC4B /* FlightData.swift in Sources */,
 				7F79324424DE5C2C00A7EC4B /* AppDelegate.swift in Sources */,
 				7F79324624DE5C2C00A7EC4B /* SceneDelegate.swift in Sources */,
+				7F79325C24E01EBA00A7EC4B /* PlaneScheduleViewController.swift in Sources */,
 				7F79325A24DE620100A7EC4B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
