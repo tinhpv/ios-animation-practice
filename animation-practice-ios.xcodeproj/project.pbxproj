@@ -66,17 +66,33 @@
 			children = (
 				7F79324324DE5C2C00A7EC4B /* AppDelegate.swift */,
 				7F79324524DE5C2C00A7EC4B /* SceneDelegate.swift */,
-				7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */,
-				7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */,
-				7F79325F24E067BB00A7EC4B /* LaunchScreenViewController.swift */,
-				7F79325924DE620100A7EC4B /* HomeViewController.swift */,
-				7F79325D24E0233200A7EC4B /* FlightData.swift */,
+				7F79326124E0F32C00A7EC4B /* PrototypeModel */,
+				7F79326224E0F34500A7EC4B /* ViewController */,
 				7F79324924DE5C2C00A7EC4B /* Main.storyboard */,
-				7F79324C24DE5C2E00A7EC4B /* Assets.xcassets */,
 				7F79324E24DE5C2E00A7EC4B /* LaunchScreen.storyboard */,
+				7F79324C24DE5C2E00A7EC4B /* Assets.xcassets */,
 				7F79325124DE5C2E00A7EC4B /* Info.plist */,
 			);
 			path = "animation-practice-ios";
+			sourceTree = "<group>";
+		};
+		7F79326124E0F32C00A7EC4B /* PrototypeModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F79325D24E0233200A7EC4B /* FlightData.swift */,
+			);
+			path = PrototypeModel;
+			sourceTree = "<group>";
+		};
+		7F79326224E0F34500A7EC4B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F79325F24E067BB00A7EC4B /* LaunchScreenViewController.swift */,
+				7F79325924DE620100A7EC4B /* HomeViewController.swift */,
+				7F79325B24E01EBA00A7EC4B /* PlaneScheduleViewController.swift */,
+				7F79325724DE61C000A7EC4B /* ViewAnimationControllerViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
