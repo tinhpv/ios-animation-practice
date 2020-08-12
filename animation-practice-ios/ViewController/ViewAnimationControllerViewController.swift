@@ -79,11 +79,23 @@ class ViewAnimationControllerViewController: UIViewController {
         
         
         // logo animation
-        UIView.animate(withDuration: 1.0, delay: 0.5, options: [], animations: {
-            self.logoImageView.transform = .identity
-        }, completion: nil)
+//        UIView.animate(withDuration: 1.0, delay: 0.5, options: [], animations: {
+//            self.logoImageView.transform = .identity
+//        }, completion: nil)
         
         
+        var transformRotation = CATransform3DIdentity
+        transformRotation.m34 = -1.0 / 1000
+        transformRotation = CATransform3DRotate(transformRotation, .pi / 2, 0.0, 1.0, 0.0)
+
+        let anim = CABasicAnimation(keyPath: "transform")
+        anim.fromValue = NSValue(caTransform3D: transformRotation)
+        anim.toValue = NSValue(caTransform3D: CATransform3DIdentity)
+        anim.duration = 2.0
+        anim.autoreverses = true
+        anim.repeatCount = .infinity
+        
+        logoImageView.layer.add(anim, forKey: nil)
     }
     
     override func viewDidLoad() {
